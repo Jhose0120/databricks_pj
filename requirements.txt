@@ -1,5 +1,4 @@
 -i https://pypi.org/simple
-python==3.13.5
 pytest==8.0.0
 pandas==2.3.3
 numpy==2.4.0
