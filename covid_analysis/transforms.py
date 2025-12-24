@@ -8,9 +8,10 @@ def filter_country(pdf, country="USA"):
 # Pivot by indicator, and fill missing values.
 def pivot_and_clean(pdf, fillna):
   pdf["value"] = pd.to_numeric(pdf["value"])
-  pdf = pdf.fillna(fillna).pivot_table(
-    values="value", columns="indicator", index="date"
+  pdf = pdf.pivot_table(
+      values="value", columns="indicator", index="date"
   )
+  pdf = pdf.fillna(fillna)  # fillna después del pivot
   return pdf
 
 # Create column names that are compatible with Delta tables.
