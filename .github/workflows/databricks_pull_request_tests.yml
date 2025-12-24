@@ -5,7 +5,7 @@ on:
 
 env:
   # Replace this value with your workspace instance name.
-  DATABRICKS_HOST: https://dbc-fd92f2b3-fddb.cloud.databricks.com/
+  DATABRICKS_HOST: https://dbc-fd92f2b3-fddb.cloud.databricks.com
 
 jobs:
   unit-test-notebook:
